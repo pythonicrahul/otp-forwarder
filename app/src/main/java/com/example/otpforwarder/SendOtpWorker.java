@@ -2,17 +2,13 @@ package com.example.otpforwarder;
 
 import android.content.Context;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
-
 import org.json.JSONObject;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-
 import okhttp3.*;
 
 public class SendOtpWorker extends Worker {

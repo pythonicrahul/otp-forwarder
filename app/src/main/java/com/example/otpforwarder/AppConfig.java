@@ -16,7 +16,7 @@ public class AppConfig {
     public static final long OTP_EXPIRY_MILLIS = 3 * 60 * 1000;
 
     // ✅ Default webhook
-    public static final String WEBHOOK_URL = "https://8263-223-185-41-154.ngrok-free.app/otp";
+    public static final String WEBHOOK_URL = "https://otp-forwarder-server.onrender.com/otp";
 
     // ✅ CSV filename
     public static final String CSV_FILENAME = "otp_logs.csv";

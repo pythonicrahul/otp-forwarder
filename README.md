@@ -35,7 +35,7 @@ This Android application automatically receives OTPs via SMS, filters them based
 
 - Regex and TPA filter logic covered via unit tests
 - Payload formatting logic tested
-- Due to Java 21 and Android mocking restrictions, tests avoid mocking `Context` and instead rely on Android instrumentation (if needed)
+- Due to Java 21 and Android mocking restrictions, tests avoid mocking `Context` and instead rely on Android instrumentation
 
 ---
 
@@ -84,7 +84,6 @@ To ensure that OTPs are reliably received and relayed — even in real-world con
 ## 📐 Architecture Diagram
 
 > ![Architecture Diagram Placeholder](./arch-diagram.png)
-> _(Replace with actual diagram before final delivery)_
 
 ---
 
@@ -106,8 +105,5 @@ To ensure that OTPs are reliably received and relayed — even in real-world con
 
 ---
 
-## ✅ Done
-
 - Built, tested, and verified end-to-end on a physical device
-- Assignment features F1–F8 fully implemented
 
