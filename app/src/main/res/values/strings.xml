@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OtpForwarder</string>
+    <string name="send_test_otp">Send Test OTP</string>
+    <string name="status_idle">Status: Idle</string>
+    <string name="enable_otp_forwarding">Enable OTP Forwarding</string>
+    <string name="export_csv">Export CSV</string>
+</resources>

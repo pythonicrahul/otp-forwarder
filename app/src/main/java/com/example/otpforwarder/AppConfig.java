@@ -1,0 +1,23 @@
+package com.example.otpforwarder;
+
+import java.util.regex.Pattern;
+
+public class AppConfig {
+
+    // ✅ OTP regex
+    public static final Pattern OTP_REGEX = Pattern.compile("\\b\\d{4,8}\\b");
+
+    // ✅ Trusted TPAs
+    public static final String[] TRUSTED_SENDERS = {
+            "MANTYS", "MNTYS", "9561899446"
+    };
+
+    // ✅ Drop OTPs older than 3 min
+    public static final long OTP_EXPIRY_MILLIS = 3 * 60 * 1000;
+
+    // ✅ Default webhook
+    public static final String WEBHOOK_URL = "https://8263-223-185-41-154.ngrok-free.app/otp";
+
+    // ✅ CSV filename
+    public static final String CSV_FILENAME = "otp_logs.csv";
+}
