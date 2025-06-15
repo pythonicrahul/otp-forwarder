@@ -52,6 +52,14 @@ public class SendOtpWorker extends Worker {
             if (response.isSuccessful()) {
                 Log.d(TAG, "OTP sent successfully");
                 LogHelper.log(getApplicationContext(), "SEND_SUCCESS", tpa, code, "Sent to webhook");
+                long receivedAt = getInputData().getLong("ts", 0L);
+                long now_ = System.currentTimeMillis();
+
+                if (receivedAt > 0) {
+                    long roundTrip = now_ - receivedAt;
+                    Utils.showToast(getApplicationContext(), "OTP sent in " + roundTrip + " ms");
+                }
+
                 return Result.success();
             } else {
                 Log.e(TAG, "Failed with code: " + response.code());
