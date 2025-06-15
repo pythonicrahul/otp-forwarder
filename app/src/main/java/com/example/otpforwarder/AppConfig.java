@@ -9,7 +9,7 @@ public class AppConfig {
 
     // ✅ Trusted TPAs
     public static final String[] TRUSTED_SENDERS = {
-            "MANTYS", "MNTYS"
+            "MANTYS", "MNTYS", "9561899446"
     };
 
     // ✅ Drop OTPs older than 3 min
